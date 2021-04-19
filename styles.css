@@ -1,0 +1,40 @@
+.centered{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#dollarGrid {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border: black;
+    border-radius: 1px;
+    border-style: solid;
+    background-color: #080A70;
+  }
+
+  .dollarGridBlock{
+      height: 50px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #080A70;
+      border: black;
+      border-radius: 1px;
+      border-style: solid;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: #C4974E;
+  }
+
+  #answerArea{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    gap: 10px;
+  }
