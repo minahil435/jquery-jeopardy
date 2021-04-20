@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 #dollarGrid {
@@ -38,3 +38,26 @@
     flex-direction: row;
     gap: 10px;
   }
+
+  #heading{
+      margin-top: 20px;
+      font-size: xx-large;
+      color: #C4974E;
+      font-family: fantasy;
+  }
+
+  #toastMessage.show {
+    visibility: visible;
+  }
+
+  #toastMessage {
+    visibility: hidden; 
+  }
+  
+  .disabled{
+      transition: background-color 0.9s ease;
+      background-color: grey;
+      pointer-events: none;
+      cursor: not-allowed;
+  }
+
