@@ -4,6 +4,8 @@ let numberSelected = ''
 let gridButtons = $('.dollarGridBlock')
 
 // window.localStorage.removeItem("GridArrayClas");
+// window.localStorage.removeItem("Score");
+
 const prevScore = window.localStorage.getItem('Score');
 let prevArray = JSON.parse(window.localStorage.getItem('GridArrayClas'));
 
@@ -41,12 +43,10 @@ for (const each of gridButtons) {
 }
 
 $('#Submit').click(function () {
-
     if (randomQuestion.answer == $('#input').val()) {
         score = score + Number(numberSelected)
         window.localStorage.setItem('Score', score);
         $('#score').text("YOUR SCORE: " + score)
-        $('#input').val('')
         $('#toastMessage').addClass('show')
         $('#toastMessage').text("Congratulation!")
     }
@@ -54,6 +54,8 @@ $('#Submit').click(function () {
         $('#toastMessage').addClass('show')
         $('#toastMessage').text("The correct answer is: " + randomQuestion.answer)
     }
+    $('#input').val('')
+
 });
 
 function chooseRandomQuestion(num) {
